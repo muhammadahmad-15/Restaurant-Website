@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant</title>
+</head>
+<body>
+    <section class="header">
+    <div class="box">
+        <ul type="none">
+            <li><a href="#">Home</a></li>
+            <li><a href="OnlideOrder.html">Online Order</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="wd">
+        <h1>Welcome!</h1>
+        <h4>Enjoy a luxurious atmosphere of colourful decor, fun seating arrangements - choose between a table or traditional floor seating, fresh bread made on the spot with a live cooking spectator kitchen and live entertainment with a traditional singer.</h4>
+        <h2>Reservation</h2>
+        <div class="opt">
+            <form action="" method="post">
+                <input type="button" value="Start Now" id="start">
+            </form>
+        </div>
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <form class="modal-form">
+                  <label for="Name">Enter your name:</label>
+                  <input type="text" id="Name" required>
+                  &nbsp;&nbsp;&nbsp;
+                  <label for="Phone">Enter your phone:</label>
+                  <input type="tel" id="Phone" onkeyup="phoneValidate()" required>
+                  <label id="phoneText" style="color: red;visibility: hidden;">Enter a valid mobile number!</label>
+                  <br><br>
+                  <label for="dish" style="margin-left: 20%;">Choose a dish you want to eat:</label>
+                  <select id="dish">
+                      <option value="Thai">Thai Takout Dish</option>
+                      <option value="Breast">Grilled Chicken Breast</option>
+                      <option value="Biryani">Biryani</option>
+                      <option value="Italian">Italian Cuisine</option>
+                      <option value="Crispy">Crispy Skin Barramundi</option>
+                      <option value="Charcoal">Charcoal Lane</option>
+                      <option value="Meal">Fancy-Pants Meal</option>
+                      <option value="Canelloni">Corn Canelloni</option>
+                  </select><br><br>
+                  <label for="address" style="margin-left: 30%;">Enter your address:</label><br>
+                  <textarea id="address" cols="30" rows="6" style="margin-left: 30%;" required></textarea><br><br>
+                  <input type="submit" value="Reserve Now" id="Reserve">
+                  <!-- <button id="Reserve">Reserve Now</button> -->
+              </form>
+            </div>
+          
+          </div>
+    </div>
+    </section>
+    <section class="dishes">
+        <div class="dish-content">
+            <h1 class="dish-heading">Popular dishes in our Restuarant</h1>
+        </div>
+        <div class="dish-section-1">
+            <div class="dish-image">
+                <img src="dish-image-1.jpg">
+                <button class="accordion">Thai Takeout Dish</button>
+                <div class="panel">
+                    <h3 class="dish1-heading">
+                        Thai Takeout Dish
+                    </h3>
+                    <p class="dish-para">Healthier version of your favourite Thai dish</p>
+                    <h1 class="dish1-price">$21.00</h1>
+                    <div class="dish1-button">
+                        <button class="dish1-btn">
+                            BOOK NOW
+                            <i class="fa fa-angle-double-right book-now"></i>                     
+                        </button>
+                    </div>         
+                </div>
+            </div>
+            <div class="dish-image">
+                <img src="dish-image-2.jpg">
+                <button class="accordion">Grilled Chicken Breast</button>
+                <div class="panel">
+                    <h3 class="dish2-heading">
+                        Grilled Chicken Breast
+                    </h3>
+                    <p class="dish-para">Boneless chicken breasts soaked in a flavorful garlic</p>
+                    <h1 class="dish2-price">$29.00</h1>
+                    <div class="dish2-button">
+                        <button class="dish2-btn">
+                            BOOK NOW
+                            <i class="fa fa-angle-double-right book-now"></i>                     
+                        </button>
+                    </div>         
+                </div>
+            </div>
+        </div>
+        <div class="dish-section-2">
+            <div class="dish-image">
+                <img src="dish-image-3.jpg">
+                <button class="accordion">Biryani</button>
+                <div class="panel">
+                    <h3 class="dish3-heading">
+                        Biryani 
+                    </h3>
+                    <p class="dish-para">Make sure to try this out!</p>  
+                    <h1 class="dish3-price">$30.00</h1>
+                    <div class="dish3-button">
+                        <button class="dish3-btn">
+                            BOOK NOW
+                            <i class="fa fa-angle-double-right book-now"></i>                     
+                        </button>
+                    </div>                  
+                </div>
+            </div>
+            <div class="dish-image">
+                <img src="dish-image-4.jpg">
+                <button class="accordion">Italian Cuisine</button>
+                <div class="panel">
+                    <h3 class="dish4-heading">
+                        Italian Cuisine
+                    </h3>
+                    <p class="dish-para">
+                        Authentic Italian Dish
+                    </p>
+                    <h1 class="dish4-price">$25.00</h1>
+                    <div class="dish4-button">
+                        <button class="dish4-btn">
+                            BOOK NOW
+                            <i class="fa fa-angle-double-right book-now"></i>                     
+                        </button>
+                    </div>         
+                </div>
+            </div> 
+        </div>
+        <div class="dish-section-3">
+            <div class="dish-image">
+                <img src="dish-image-5.jpg">
+                <button class="accordion">Crispy Skin Barramundi</button>
+                <div class="panel">
+                    <h3 class="dish1-heading">
+                        Crispy Skin Barramundi
+                    </h3>
+                    <p class="dish-para">Crispy Skin Barramundi, Cauliflower Leek Puree, Broccolini & Lemon</p>
+                    <h1 class="dish1-price">$34.00</h1>
+                    <div class="dish1-button">
+                        <button class="dish1-btn">
+                            BOOK NOW
+                            <i class="fa fa-angle-double-right book-now"></i>                     
+                        </button>
+                    </div>         
+                </div>
+            </div>
+            <div class="dish-image">
+                <img src="dish-image-6.jpg">
+                <button class="accordion">Charcoal Lane</button>
+                <div class="panel">
+                    <h3 class="dish2-heading">
+                        Charcoal Lane
+                    </h3>
+                    <p class="dish-para">Charcoal Lane, Fitzroy-Fitzoy-Updated 2020</p>
+                    <h1 class="dish2-price">$27.00</h1>
+                    <div class="dish2-button">
+                        <button class="dish2-btn">
+                            BOOK NOW
+                            <i class="fa fa-angle-double-right book-now"></i>                     
+                        </button>
+                    </div>         
+                </div>
+            </div>
+        </div>
+
+        <div class="dish-section-4">
+            <div class="dish-image">
+                <img src="dish-image-7.jpg">
+                <button class="accordion">Fancy-Pants Meal</button>
+                <div class="panel">
+                    <h3 class="dish1-heading">
+                        Fancy-Pants Meal
+                    </h3>
+                    <p class="dish-para">The vegan experience: A Fancy-Pants meal fir for vegan royality</p>
+                    <h1 class="dish1-price">$32.00</h1>
+                    <div class="dish1-button">
+                        <button class="dish1-btn">
+                            BOOK NOW
+                            <i class="fa fa-angle-double-right book-now"></i>                     
+                        </button>
+                    </div>         
+                </div>
+            </div>
+            <div class="dish-image">
+                <img src="dish-image-8.jpg">
+                <button class="accordion">Corn Canelloni</button>
+                <div class="panel">
+                    <h3 class="dish2-heading">
+                        Corn Canelloni
+                    </h3>
+                    <p class="dish-para">Creamy and cheesy with the goodness of corn, paneer and a hint of pepper.</p>
+                    <h1 class="dish2-price">$30.00</h1>
+                    <div class="dish2-button">
+                        <button class="dish2-btn">
+                            BOOK NOW
+                            <i class="fa fa-angle-double-right book-now"></i>                     
+                        </button>
+                    </div>         
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="footer">
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="OnlideOrder.html">Online Order</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <br>
+        <p>Copyright &copy; 2020, The Family Restaurant. All Rights Reserved</p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+    </script>
+    <script src="validateForm.js"></script>
+    <script src="functionality.js"></script>
+</body>
+</html>

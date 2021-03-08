@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="box">
+        <ul type="none">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="OnlideOrder.html">Online Order</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <section class="order-content">
+        <div class="order">
+            <form>
+                <br><br><br>
+                <label for="Name" style="font-size: 30px;">Enter your name:</label>
+                <input type="text" id="Name" style="font-size: 20px;" required>
+                &nbsp;&nbsp;&nbsp;
+                <label for="Phone" style="font-size: 30px;">Enter your phone:</label>
+                <input type="tel" id="Phone" style="font-size: 20px;" onkeyup="phoneValidate()" required>
+                <label id="phoneText" style="color: red;visibility: hidden;">Enter a valid mobile number!</label>
+                <br><br><br><br><br><hr><br><br><br>
+                <label for="dish" style="margin-left: 20%;font-size: 30px;">Choose a dish you want to eat:</label>
+                <select id="dish" style="font-size: 20px;">
+                    <option value="Thai">Thai Takout Dish</option>
+                    <option value="Breast">Grilled Chicken Breast</option>
+                    <option value="Biryani">Biryani</option>
+                    <option value="Italian">Italian Cuisine</option>
+                    <option value="Crispy">Crispy Skin Barramundi</option>
+                    <option value="Charcoal">Charcoal Lane</option>
+                    <option value="Meal">Fancy-Pants Meal</option>
+                    <option value="Canelloni">Corn Canelloni</option>
+                </select><br><br><br><br><br><hr>
+                <br>
+                <label for="address" style="margin-left: 30%;font-size: 30px;">Enter your address:</label><br><br>
+                <textarea id="address" cols="50" rows="10" style="margin-left: 30%;" required></textarea><br><br>
+                <input type="submit" id="Reserve" value="Reserve Now" style="margin-left: 40%;height: 50px;width: 200px;"
+                onsubmit="displayModal()">
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Online Order</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <br>
+        <p>Copyright &copy; 2020, The Family Restaurant. All Rights Reserved</p>
+    </div>
+    <script src="functionality.js"></script>
+    <script src="validateForm.js"></script>
+</body>
+</html>

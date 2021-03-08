@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="box">
+        <ul type="none">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="OnlideOrder.html">Online Order</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <section class="contact">
+        <div class="wrapper">
+            <h1>Contact Us</h1>
+            <p>
+                S&S Hotels & Resorts is a modern, upscale hospitality company that is passionate about ‘making moments’, recognising that small gestures make a big difference to our guests, our owners and our people. We do ordinary things in an extraordinary way – a philosophy that has defined our brand’s success from the very start.
+            </p>
+        </div>
+        <div class="contactForm">
+            <br><br><br><br><br><br><br><br>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="E-mail" id="email" onkeyup="emailValidate()" required>
+                <label id="emailText" style="color: red;visibility: hidden;">Enter a valid E-mail address</label>
+                <input type="text" id="msg" placeholder="Message" required>
+            </form>
+            <input type="submit" id="talk" value="Let's Talk">
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="OnlideOrder.html">Online Order</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <br>
+        <p>Copyright &copy; 2020, The Family Restaurant. All Rights Reserved</p>
+    </div>
+    <script src="functionality.js"></script>
+    <script src="validateForm.js"></script>
+</body>
+</html>
